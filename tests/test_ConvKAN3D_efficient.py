@@ -1,8 +1,5 @@
 """ Testing the ConvKAN3D (EfficientKAN) Module """
 
-import sys
-sys.path.insert(1, './ConvKAN3D/')
-
 import pytest
 from unittest.mock import patch
 from ConvKAN3D.ConvKAN3D import ConvKAN3D
