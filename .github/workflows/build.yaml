@@ -6,7 +6,7 @@ jobs:
     timeout-minutes: 5
     strategy:
       matrix:
-        python-version: ["3.9"]
+        python-version: ["3.7", "3.9", "3.11"]
     steps:
       - uses: actions/checkout@v3
       - name: Set up Python ${{ matrix.python-version }}
@@ -17,7 +17,6 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install --user pipenv
-          pip install -r requirements.txt
           pipenv --python ${{ matrix.python-version }}
           pipenv install pytest
           pipenv install
@@ -26,4 +25,4 @@ jobs:
           pipenv install -e .
       - name: Test with pytest
         run: |
-          python -m pytest
+          pipenv run python -m pytest

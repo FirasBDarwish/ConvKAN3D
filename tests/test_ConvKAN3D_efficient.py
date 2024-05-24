@@ -2,7 +2,7 @@
 
 import pytest
 from unittest.mock import patch
-from ConvKAN3D.ConvKAN3D import ConvKAN3D
+from src.ConvKAN3D.ConvKAN3D import ConvKAN3D
 import torch
 
 class Tests:

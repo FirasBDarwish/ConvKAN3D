@@ -4,7 +4,7 @@ import warnings
 import unfoldNd
 from enum import Enum
 
-from ConvKAN3D.efficient_kan import KANLinear
+from efficient_kan import KANLinear
 
 """
 The parameters stride, padding, dilation can either be:
