@@ -17,7 +17,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install --user pipenv
-          pip install pytest
+          pip install requirements.txt
           pipenv --python ${{ matrix.python-version }}
           pipenv install pytest
           pipenv install
@@ -26,4 +26,4 @@ jobs:
           pipenv install -e .
       - name: Test with pytest
         run: |
-          pipenv run python -m pytest
+          python -m pytest
