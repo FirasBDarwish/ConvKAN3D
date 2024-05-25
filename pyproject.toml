@@ -10,7 +10,7 @@ dependencies = [
 ]
 name = "ConvKAN3D"
 description = "Implementation of 3D convolutional layer with Kolmogorov-Arnold Networks (KANs)"
-version = "0.1.0"
+version = "0.1.1"
 authors = [
   { name= "Firas Darwish", email= "fbd2014@nyu.edu" },
 ]
