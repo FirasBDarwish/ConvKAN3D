@@ -7,7 +7,7 @@
   <h3 align="center">ConvKAN</h3>
 
   <p align="center">
-    Kolmogorov-Arnold Networks (KANs) meet 3D Convolutional Layers (Conv3D)
+    Kolmogorov-Arnold Networks (KANs) meet 3D Convolutional Layers (Conv3d)
     <br />
     <a href="https://arxiv.org/abs/2404.19756"><strong>Read the KANs Paper »</strong></a>
     <br />
@@ -61,12 +61,12 @@ Once you've installed the package and once in Python, make sure to import:
    from ConvKAN3D.ConvKAN3D import effConvKAN3D
 ```
 
-Now, you're all good to use effConvKAN3D just as you would with Conv3D (with some added hyperparameters for the underlying KAN module being used).
+Now, you're all good to use effConvKAN3D just as you would with Conv3d (with some added hyperparameters for the underlying KAN module being used).
 
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/catiaspsilva/README-template/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/FirasBDarwish/ConvKAN3D/issues) for a list of proposed features (and known issues).
 
 
 <!-- LICENSE -->
