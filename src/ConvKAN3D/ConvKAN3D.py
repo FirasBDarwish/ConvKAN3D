@@ -53,7 +53,7 @@ class ConvKAN3D(torch.nn.Module):
 
         self.unfold = unfoldNd.UnfoldNd(self.kernel_size, dilation=self.dilation, padding=self.padding, stride=self.stride)
         
-        self.linear = KANLinear(self.in_channels,
+        self.linear = KANLinear(self.in_channels * kernel_size[0] * kernel_size[1] * kernel_size[2],
                                 self.out_channels,
                                 grid_size,
                                 spline_order,

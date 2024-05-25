@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+dependencies = [
+  "termcolor",
+  "torch",
+  "unfoldNd"
+]
+name = "ConvKAN3D"
+description = "Implementation of 3D convolutional layer with Kolmogorov-Arnold Networks (KANs)"
+version = "0.1.0"
+authors = [
+  { name= "Firas Darwish", email= "fbd2014@nyu.edu" },
+]
+license = { file = "LICENSE" }
+readme = "README.md"
+keywords = ["python", "package", "build", "tutorial"]
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Intended Audience :: Education",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.urls]
+"Homepage" = "https://github.com/FirasBDarwish/ConvKAN3D"
+"Repository" = "https://github.com/FirasBDarwish/ConvKAN3D.git"
+"Bug Tracker" = "https://github.com/FirasBDarwish/ConvKAN3D/issues"
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "src"
+]
