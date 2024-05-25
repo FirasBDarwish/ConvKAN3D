@@ -12,7 +12,7 @@ The parameters stride, padding, dilation can either be:
     + a single int - in which case the same value is used for the depth, height and width dimension
     + a tuple of three ints - in which case, the first int is used for the depth dimension, the second int for the height dimension and the third int for the width dimension
 """
-class ConvKAN3D(torch.nn.Module):
+class effConvKAN3D(torch.nn.Module):
     """
     This is an implementation of convolutional layers using Kolmogorov-Arnold Networks (KANs)
     """
@@ -36,10 +36,10 @@ class ConvKAN3D(torch.nn.Module):
                 grid_eps=0.02,
                 grid_range=[-1, 1], device=None, dtype=None):
         
-        if not ConvKAN3D._is_3_tuple(kernel_size):
+        if not effConvKAN3D._is_3_tuple(kernel_size):
             kernel_size = (kernel_size, kernel_size, kernel_size)
 
-        super(ConvKAN3D, self).__init__()
+        super(effConvKAN3D, self).__init__()
 
         self.in_channels = in_channels
         self.out_channels = out_channels
@@ -106,11 +106,11 @@ class ConvKAN3D(torch.nn.Module):
         out = out.transpose(1,2)
 
         # ensure all other parameters for convolution are tuples to find dimensionality of output feature map
-        if(not ConvKAN3D._is_3_tuple(self.stride)):
+        if(not effConvKAN3D._is_3_tuple(self.stride)):
             self.stride = (self.stride, self.stride, self.stride)
-        if(not ConvKAN3D._is_3_tuple(self.padding)):
+        if(not effConvKAN3D._is_3_tuple(self.padding)):
             self.padding = (self.padding, self.padding, self.padding)
-        if(not ConvKAN3D._is_3_tuple(self.dilation)):
+        if(not effConvKAN3D._is_3_tuple(self.dilation)):
             self.dilation = (self.dilation, self.dilation, self.dilation)
         
         depth_out = ( (depth + 2*self.padding[0] - self.dilation[0] * (self.kernel_size[0] - 1) - 1) // self.stride[0] ) + 1
