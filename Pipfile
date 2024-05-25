@@ -9,6 +9,8 @@ unfoldnd = "*"
 pytest = "*"
 
 [dev-packages]
+pytest = "*"
+build = "*"
 
 [requires]
 python_version = "3.9"
