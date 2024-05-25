@@ -47,7 +47,7 @@ Python package for 3D convolutional layers using Kolmogorov-Arnold Networks (KAN
 <!-- GETTING STARTED -->
 ## Getting Started
 
-Using this packaage should be fairly simple!
+Using this package should be fairly simple!
 
 ### Installation
 
@@ -77,7 +77,7 @@ Distributed under the GNU General Public License. See `LICENSE` for more informa
 <!-- Authors -->
 ## Authors
 
-Your Name - [firasbdarwish](https://www.linkedin.com/in/firasbdarwish/) - fbd2014@nyu.edu
+[firasbdarwish](https://www.linkedin.com/in/firasbdarwish/) - fbd2014@nyu.edu
 
 Project Link: [https://github.com/FirasBDarwish/ConvKAN3D](https://github.com/FirasBDarwish/ConvKAN3D)
 
@@ -86,6 +86,7 @@ Project Link: [https://github.com/FirasBDarwish/ConvKAN3D](https://github.com/Fi
 
 * [Official KAN Repo](https://github.com/KindXiaoming/pykan/tree/master)
 * [AwesomeKAN Repo](https://github.com/mintisan/awesome-kan)
-* [EffcientKAN Implementation](https://github.com/Blealtan/efficient-kan)
+* [EfficentKAN Implementation](https://github.com/Blealtan/efficient-kan)
+* [KAN-Conv2D Implementation that outlines how to easily apply KAN implementations to convolutional layers](https://github.com/omarrayyann/KAN-Conv2D)
 
 ## Thank you
