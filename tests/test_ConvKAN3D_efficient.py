@@ -6,7 +6,7 @@ from ConvKAN3D.ConvKAN3D import ConvKAN3D
 import torch
 
 class Tests:
-    """ Class defines tests """
+    """ Class defines tests. """
 
     def test_assertions(self):
         conv = ConvKAN3D(in_channels=3, out_channels=3, kernel_size=3)
